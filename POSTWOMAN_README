@@ -1,0 +1,41 @@
+Application created in c++11 
+
+
+How to compile application: 
+
+create build dir -> mkdir build
+
+specify g++ and gcc location in Release.cmake and Debug.cmake
+
+move in build -> cd build
+
+run the command -> cmake -DCMAKE_TOOLCHAIN_FILE=../Release.cmake ..
+
+run the make in make file -> make -j 
+
+
+How to run : 
+
+./postWoman -c "file/where/to/log/results"
+
+the program expect to receive from standard input string related to parcels
+
+
+How to close: 
+
+tap ctrl+c -> a signal handler has been implemented, anyway you need to put something
+from std-input to close all threads
+
+tap close + enter -> the application close immediatly 
+
+How to check log: 
+
+the application makes a log file, with the string format requested. 
+also on standard output is possible to see output of all threads. 
+
+
+
+
+
+
+
